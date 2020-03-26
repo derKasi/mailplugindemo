@@ -1,4 +1,6 @@
 # Grails 4 Mail Example Application
+Reference Issue: [grails3-plugins/mail#41](https://github.com/grails3-plugins/mail/issues/41)
+
 A sample Grails 4.0.2 application configured with the mail plugin 3.0.0. The main controller is HelloController.groovy which is configured with /maildemo endpoint to test send an email.
 
 ## Running Application
