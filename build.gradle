@@ -75,7 +75,13 @@ bootRun {
         '-Xmx1024m')
     sourceResources sourceSets.main
     String springProfilesActive = 'spring.profiles.active'
+    String grailsMailUsername = 'grails.mail.username'
+    String grailsMailPassword = 'grails.mail.password'
+    String grailsMailDefaultRecipient = 'grails.mail.default.to'
     systemProperty springProfilesActive, System.getProperty(springProfilesActive)
+    systemProperty grailsMailDefaultRecipient, System.getProperty(grailsMailDefaultRecipient)
+    systemProperty grailsMailUsername, System.getProperty(grailsMailUsername)
+    systemProperty grailsMailPassword, System.getProperty(grailsMailPassword)
 }
 
 tasks.withType(GroovyCompile) {
